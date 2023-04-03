@@ -158,6 +158,11 @@ This column contained some values in (K) which represents thousand, to remove th
 
 **_if Text.Contains([Hits], "K") then Number.From(Text.BeforeDelimiter([Hits], "K")) * 1000 else Number.From([Hits]))_** 
 
+**Hits Before**                               |           **Hits After**  
+:---------------------------------------------------:|:------------------------------------------------------------:
+![](Hits_Before.jpg)                                 |          ![](Hits_After.jpg)
+
+
 ## Conclusion
 The data cleaning seems unachievable at first glance but eventually became interesting, the whole process made me realized the importance of cleaning data. This challenge has helped me improve my data cleaning skills and at the same time, learnt a lot during the process. 
 The cleaned dataset is now ready for further analysis and visualization.
