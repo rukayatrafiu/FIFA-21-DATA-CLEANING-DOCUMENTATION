@@ -28,21 +28,27 @@ After importing the originally downloaded data into the power query editor, I no
 Both columns are not needed because they are metadata i.e, a data providing information about other data, in this case, it gives information about each player which is already included in the dataset. The two columns were deleted so as to avoid repetition of information.
 
 ## Short Name
-Using the filter button, I realized one of the names contain a special character, this special character was replaced with the appropriate letter (S).
+Using the filter button, I realized one of the names contain a special character, this special character was replaced with the appropriate letter "S".
 
 **Short Name Before**                                 |          **Short Name After**
 :----------------------------------------------:|:-------------------------------------------------:
 ![](Short_Name_Before.jpg)                      |                ![](Short_Name_After.jpg)
 
 ## OVA and POT
-The **_Overall rating_** (OVA) and **_potential rating_** (POT) are to be measured in percentage(%), this was achieved by dividing both the OVA and POT column by 100 and then changed the data type to percentage (%).
+The **_overall rating_** (OVA) and **_potential rating_** (POT) are to be measured in percentage(%). This was achieved by dividing both the OVA and POT column by 100 and then changed the data type to percentage (%).
 
 **OVA and POT Before**                               |           **OVA and POT After**  
 :---------------------------------------------------:|:------------------------------------------------------------:
 ![](OVA_and_POT_Before.jpg)                                 |          ![](OVA_and_POT_After.jpg)
 
 ## Club
-The Club column contained some extra spaces between them that needs cleaning. To clean this, I selected the club column, then right click, select the transform option from the list, then select Trim, this automatically remove all white spaces from the column.
+The Club column contained some extra spaces between them that needs cleaning. To clean this, I followed the tep below;
+
+ - I selected the club column, then right click
+ 
+ - Select the transform option from the list, then select Trim
+ 
+ This automatically remove all white spaces from the column.
 
 **Club Before**                               |           **Club After**  
 :---------------------------------------------------:|:------------------------------------------------------------:
@@ -124,7 +130,7 @@ The **_best overall_** (BOV) is to be measured in percentage (%), this was achie
 
 
 ## Value, Wage and Release Clauses
-These columns represent the market value, weekly wage and release clause of each players, the date in each columns contained the (€) sign, the suffix (M) and (K) which represent the euros, million and thousand respectively. I used the following M code to remove the € from the three columns and to convert the numbers to dollars.
+These columns represent the market value, weekly wage and release clause of each players. The date in each columns contained the (€) sign, the suffix (M) and (K) which represent the euros, million and thousand respectively. I used the following M code to remove the € from the three columns and to convert the numbers to dollars.
 
 **Value**
 ---
